@@ -9,6 +9,7 @@ return(
       <p>{props.nombre}</p>
       <p>{props.direccion}</p>
       <p>{props.correo}</p>
+
         
 </div>
 

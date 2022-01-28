@@ -5,13 +5,13 @@ export default function Navbar() {
         <ul>
             <li>
                 <NavLink to={"/universidad"} className="navlink">
-                    Profesores
+                    Docente
                 </NavLink>
 
             </li>
             <li>
-                <NavLink to={"/courses"} className="navlink">
-                    Cursos
+                <NavLink to={"/universidad"} className="navlink">
+                    Tarea
                 </NavLink>
             </li>
         
