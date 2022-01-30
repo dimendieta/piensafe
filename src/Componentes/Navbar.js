@@ -4,13 +4,13 @@ export default function Navbar() {
     return (
         <ul>
             <li>
-                <NavLink to={"/universidad"} className="navlink">
+                <NavLink to={"/university"} className="navlink">
                     Docente
                 </NavLink>
 
             </li>
             <li>
-                <NavLink to={"/universidad"} className="navlink">
+                <NavLink to={"/university"} className="navlink">
                     Tarea
                 </NavLink>
             </li>

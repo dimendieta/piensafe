@@ -66,12 +66,13 @@ function UniversidadPage() {
     <div>
   
 
-      <h1 className='titulo'>Listado Docentes</h1>
+      <h1>Listado Docentes</h1>
 
-      <form  className='ingreso' onSubmit={onSubmit}>
+      <form   onSubmit={onSubmit}>
 <label>
   Id
 <input 
+
 name="id"
 value={id}
 onChange={onChange}
@@ -81,6 +82,7 @@ onChange={onChange}
 <label>
   Nombre
 <input 
+
 name="nombre"
 value={nombre}
 onChange={onChange}
@@ -91,6 +93,7 @@ onChange={onChange}
 <label>
   Direccion
 <input 
+
 name="direccion"
 value={direccion}
 onChange={onChange}
@@ -101,6 +104,7 @@ onChange={onChange}
 <label>
   Correo
 <input 
+
 name="correo"
 value={correo}
 onChange={onChange}

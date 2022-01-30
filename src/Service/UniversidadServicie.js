@@ -19,8 +19,18 @@ const createUniversidad = async (university) => {
     return await resp.json();
 }
 
+const findByIdUniversidad = async (docenteId) => {
+    const response = await fetch(`${urlCrud}/university/${docenteId}`);  
+    const data = await response.json();     
+    return  data;
+}
+
+
 
 export {
     getListUniversidad,
-    createUniversidad
+    createUniversidad,
+    findByIdUniversidad
+   
+   
 }

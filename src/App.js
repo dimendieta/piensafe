@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./Componentes/Navbar";
 import UniversidadPage from './Universidad/UniversidadPage';
 
+
 function App() {
   return (
   
@@ -10,7 +11,8 @@ function App() {
   <Navbar />
     <Routes>
 
-      <Route path="/universidad" element={< UniversidadPage />} /> 
+      <Route path="/university" element={< UniversidadPage />} /> 
+     
 
     
 
