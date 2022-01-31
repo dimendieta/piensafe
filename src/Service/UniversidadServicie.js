@@ -7,6 +7,13 @@ const getListUniversidad = async () => {
     return  data;
 }
 
+const findByIdUniversidad = async (docenteid) => {
+    const response = await fetch(`${urlCrud}/university/${docenteid}`);  
+    const data = await response.json();     
+    return  data;
+}
+
+
 const createUniversidad = async (university) => {
     console.log(university);
     const resp = await fetch(`${urlCrud}/university`, {
@@ -19,18 +26,25 @@ const createUniversidad = async (university) => {
     return await resp.json();
 }
 
-const findByIdUniversidad = async (docenteId) => {
-    const response = await fetch(`${urlCrud}/university/${docenteId}`);  
-    const data = await response.json();     
-    return  data;
+const updateUniversidad = async (universidad) => {
+  
+    const resp = await fetch(`${urlCrud}/university`, {
+        method: 'PUT',
+        body: JSON.stringify(universidad),
+        headers: {
+            'Content-type': 'application/json'
+        }
+    });
+    return await resp.json();
 }
-
 
 
 export {
     getListUniversidad,
     createUniversidad,
-    findByIdUniversidad
+    updateUniversidad,
+    findByIdUniversidad,
+ 
    
    
 }

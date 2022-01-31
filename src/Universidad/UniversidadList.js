@@ -1,14 +1,13 @@
-import "./Universidad.css";
 function UniversidadList(props){
 
 return(
 
-    <table>
+    <table >
     <thead >
       <tr>
-        <th >id</th>
+        <th >Id</th>
         <th>Nombre</th>
-        <th>direccion</th>
+        <th>Direccion</th>
         <th>Correo</th>
 
       </tr>
@@ -19,8 +18,6 @@ return(
         {props.children}
     
         </tbody>
-
-
 
         </table>
 
