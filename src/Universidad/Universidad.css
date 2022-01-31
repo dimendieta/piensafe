@@ -2,27 +2,32 @@
 
 table {
     border-collapse: collapse;
+    margin:auto ;
 }
 td {
     border-bottom: 1px solid #ddd;    
-    padding: 8px;
-    padding-top: 20px;
+    padding: 40px;
+    padding-top: 5px;
     text-align: left;
   
 }
 tr{
     background-color: #bdd1b7;
     text-align: center;
+   
     
 }
 th {  
     border-bottom: 1px solid #ddd;    
-    padding: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 55px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     background-color: #04AA6D;
     color: rgb(10, 0, 0);
+    margin-top: 30px;
+    text-align:center;
+    
     
 }
     
@@ -56,10 +61,10 @@ tr:hover {background-color: #ddd;}
     margin-bottom: 10px;
 }
 
-.boxFormUpdate label{
-    background: white;
+.boxFormUpdate {
+    background: rgb(172, 20, 20);
     border: 0 none;
-    border-radius: 3px;
+    border-radius: 10px;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
     padding: 20px 30px;
     box-sizing: border-box;
@@ -73,25 +78,27 @@ tr:hover {background-color: #ddd;}
 .formUpdateInput {
     padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
     width: 100%;
     box-sizing: border-box;
-    font-family: montserrat;
-    color: #2C3E50;
-    font-size: 13px;
+    font-family:'Times New Roman', Times, serif;
+    color: #010407;
+    font-size: 19px;
+    background-color: rgb(169, 182, 155);
 }
 
-.formUpdateBtn {
+.formUpdateBoton {
     width: 100px;
-    background: #27AE60;
+    background: #6f8ae0;
     font-weight: bold;
-    color: white;
+    color: rgb(5, 0, 0);
     border: 0 none;
-    border-radius: 1px;
+    border-radius: 20px;
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 5px;
+
 }
 .ul {
         list-style: none;  
@@ -109,4 +116,24 @@ tr:hover {background-color: #ddd;}
         text-decoration: none;
     }
 
+.subtitulo{
 
+    width: 250px;
+    font-weight:900;
+    color: rgb(5, 0, 0);
+    padding: 5px px;
+    margin: 10px 150px;
+    text-decoration: underline rgb(0, 0, 0);
+}
+.estilocrear{
+    background: #acbd8e;
+    font-weight:900;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(5, 0, 0);
+    border: 0 none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 20px;
+    margin: 20px 20px;
+   
+}

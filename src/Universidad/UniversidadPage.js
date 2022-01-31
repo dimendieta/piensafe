@@ -1,3 +1,4 @@
+import "./Universidad.css";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { getListUniversidad } from '../Service/UniversidadServicie';
@@ -20,8 +21,8 @@ function UniversidadPage() {
     
     return (
       <div>
-       <h2>Lista de Docentes</h2>
-       <Link to='/createUniversidad'> Crear</Link>
+       <h2 >Lista de Docentes</h2>
+       <Link to='/createUniversidad' className="estilocrear"> Crear</Link>
 
 
        <UniversidadList>

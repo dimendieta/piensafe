@@ -38,7 +38,7 @@ function UniversidadUpdate() {
   
          <form   onSubmit={onSubmit} className="boxFormUpdate">
 
-             <h2>Actualizar Docente</h2>
+             <h2 className="subtitulo">Actualizar Datos</h2>
 
              <input 
              
@@ -67,7 +67,7 @@ function UniversidadUpdate() {
                 onChange={onChange}
             />
 
-        <button type="submit" className="formUpdateBtn"> Guardar </button>
+        <button type="submit" className="formUpdateBoton"> Guardar </button>
 
       </form>
     </div>

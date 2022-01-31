@@ -16,7 +16,7 @@ const findByIdUniversidad = async (docenteid) => {
 
 const createUniversidad = async (universidad) => {
     console.log(universidad);
-    const resp = await fetch(`${urlCrud}/university/`, {
+    const resp = await fetch(`${urlCrud}/university`, {
         method: 'POST',
         body: JSON.stringify(universidad),
         headers: {
@@ -43,7 +43,7 @@ export {
     getListUniversidad,
     createUniversidad,
     updateUniversidad,
-    findByIdUniversidad,
+    findByIdUniversidad
  
    
    
