@@ -14,11 +14,11 @@ const findByIdUniversidad = async (docenteid) => {
 }
 
 
-const createUniversidad = async (university) => {
-    console.log(university);
-    const resp = await fetch(`${urlCrud}/university`, {
+const createUniversidad = async (universidad) => {
+    console.log(universidad);
+    const resp = await fetch(`${urlCrud}/university/`, {
         method: 'POST',
-        body: JSON.stringify(university),
+        body: JSON.stringify(universidad),
         headers: {
             'Content-type': 'application/json'
         }
