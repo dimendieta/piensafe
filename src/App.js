@@ -7,7 +7,9 @@ import UniversidadUpdate from './Universidad/UniversidadUpdate';
 import UniversidadCreate from './Universidad/UniversidadCreate';
 import Navbar from "./Componentes/Navbar";
 import UniversidadCourse from "./Course/UniversidadCourse";
-import UsuariosPage from "./Universidad/UsuariosPage";
+import UsuariosPage from "./Usuarios/UsuariosPage";
+import UsuariosUpdate from "./Usuarios/UsuariosUpdate";
+
 
 
 
@@ -22,9 +24,12 @@ function App() {
       <Route path="/university" element={< UniversidadPage />} /> 
       <Route path="/universidadcourses" element={< UniversidadCourses />} />
       <Route path="/universidadcourse" element={< UniversidadCourse />} />
-      <Route path="/updateUniversidad/:docenteid" element={< UniversidadUpdate />} />
-      <Route path="/createUniversidad" element={< UniversidadCreate/>} />
-      <Route path="/createUsuarios" element={< UsuariosPage/>} />
+      <Route path="/updateUniversidad/:docenteid" element={< UniversidadUpdate />} />   
+      <Route path="/createUniversidad" element={< UniversidadCreate/>} />     
+      <Route path="/university" element={< UsuariosPage/>} />
+      <Route path="/createUsuarios" element={< UsuariosUpdate/>} />
+      
+
 
      
 

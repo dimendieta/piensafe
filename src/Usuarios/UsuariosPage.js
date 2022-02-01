@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import {  getListUsuarios } from '../Service/UniversidadServicie';
+import {  getListUsuarios } from '../Service/UsuariosService';
 import Usuarios from "./Usuarios";
+import UsuariosList from "./UsuariosList";
+import { Link } from "react-router-dom";
+import "./Usuarios.css";
+
+
 
 
 function UsuariosPage() {
@@ -22,22 +26,24 @@ function UsuariosPage() {
       <div>
        <h2 >Lista de Usuarios</h2>
        <Link to='/createUsuarios' className="estilocrear"> Crear</Link>
+       
 
 
    
+       <UsuariosList>
 
 {
 
-
-
-usuarios.map(usuarios => (
-         
-    <Usuarios key={usuarios.id} id={usuarios.id}username={usuarios.username} password={usuarios.password} status={usuarios.status} />
-    
-  ))}
+usuarios.map(item =>
+  <Usuarios
+  key={item.id}
+  itemusuarios={item} />
   
+  )
+}
 
 
+      </UsuariosList>
 
 
     

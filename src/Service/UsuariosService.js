@@ -1,19 +1,21 @@
 const urlCrud = 'http://localhost:3001';
 
-const getListUniversidad = async () => {
+
+const getListUsuarios = async () => {
     const response = await fetch(`${urlCrud}/university`);    
     const data = await response.json();
     console.log(data)
     return  data;
 }
 
-const findByIdUniversidad = async (docenteid) => {
-    const response = await fetch(`${urlCrud}/university/${docenteid}`);  
+
+const findByIdUsuarios = async (usuariosid) => {
+    const response = await fetch(`${urlCrud}/university/${usuariosid}`);  
     const data = await response.json();     
     return  data;
 }
 
-const createUniversidad = async (universidad) => {
+const createUsuarios = async (universidad) => {
     console.log(universidad);
     const resp = await fetch(`${urlCrud}/university`, {
         method: 'POST',
@@ -25,7 +27,7 @@ const createUniversidad = async (universidad) => {
     return await resp.json();
 }
 
-const updateUniversidad = async (universidad) => {
+const updateUsuarios = async (universidad) => {
   
     const resp = await fetch(`${urlCrud}/university`, {
         method: 'PUT',
@@ -37,10 +39,10 @@ const updateUniversidad = async (universidad) => {
     return await resp.json();
 }
 
+
 export {
-    getListUniversidad,
-    createUniversidad,
-    updateUniversidad,
-    findByIdUniversidad
-    
+    getListUsuarios,
+    findByIdUsuarios,
+    createUsuarios,
+    updateUsuarios
 }

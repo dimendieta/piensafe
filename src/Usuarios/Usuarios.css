@@ -1,0 +1,152 @@
+
+
+table {
+    border-collapse: collapse;
+    margin:auto ;
+}
+td {
+    border-bottom: 1px solid #ddd;    
+    padding: 40px;
+    padding-top: 5px;
+    text-align: left;
+  
+}
+tr{
+    background-color: #bdd1b7;
+    text-align: center;
+   
+    
+}
+th {  
+    border-bottom: 1px solid #ddd;    
+    padding: 55px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: rgb(10, 0, 0);
+    margin-top: 30px;
+    text-align:center;
+    
+    
+}
+    
+tr:hover {background-color: #ddd;}
+
+.boxUpdate{
+
+
+    width: 600px;
+    height: 400px;
+    
+}
+
+.boxFormUpdate{
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    
+    position: relative;
+}
+
+.boxFormUpdate h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.boxFormUpdate {
+    background: rgb(172, 20, 20);
+    border: 0 none;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    
+  
+    position: relative;
+}
+
+.formUpdateInput {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    color: #010407;
+    font-size: 19px;
+    background-color: rgb(169, 182, 155);
+}
+
+.formUpdateBoton {
+    width: 100px;
+    background: #6f8ae0;
+    font-weight: bold;
+    color: rgb(5, 0, 0);
+    border: 0 none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+
+}
+.ul {
+        list-style: none;  
+        background-color: wheat;
+    }
+    
+.li { 
+    border-left: black;
+    display: inline-block;
+    margin: 10px;
+    
+    }
+    
+.navlink { 
+    letter-spacing:normal;
+    font-weight:bold;
+    color: rgb(0, 0, 0);
+    font-size:x-large;
+    font-family:cursive;
+    border: none;
+    margin-left: 20px;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 30px;
+  
+    }
+
+.subtitulo{
+
+    width: 250px;
+    font-weight:900;
+    color: rgb(5, 0, 0);
+    padding: 5px px;
+    margin: 10px 150px;
+    text-decoration: underline rgb(0, 0, 0);
+}
+.estilocrear{
+    font-weight:bold;
+    font-size:x-large;
+    background: #acbd8e;
+    font-weight:900;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(5, 0, 0);
+    border: 0 none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 20px;
+    margin: 20px 20px;
+   
+   
+}
