@@ -7,12 +7,14 @@ import UniversidadUpdate from './Universidad/UniversidadUpdate';
 import UniversidadCreate from './Universidad/UniversidadCreate';
 import Navbar from "./Componentes/Navbar";
 import UniversidadCourse from "./Course/UniversidadCourse";
+import UsuariosPage from "./Universidad/UsuariosPage";
 
 
 
 function App() {
   return (
   
+   
 <BrowserRouter>
   <Navbar />
     <Routes>
@@ -22,6 +24,7 @@ function App() {
       <Route path="/universidadcourse" element={< UniversidadCourse />} />
       <Route path="/updateUniversidad/:docenteid" element={< UniversidadUpdate />} />
       <Route path="/createUniversidad" element={< UniversidadCreate/>} />
+      <Route path="/createUsuarios" element={< UsuariosPage/>} />
 
      
 

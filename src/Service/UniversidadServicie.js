@@ -7,6 +7,13 @@ const getListUniversidad = async () => {
     return  data;
 }
 
+const getListUsuarios = async () => {
+    const response = await fetch(`${urlCrud}/university`);    
+    const data = await response.json();
+    console.log(data)
+    return  data;
+}
+
 const findByIdUniversidad = async (docenteid) => {
     const response = await fetch(`${urlCrud}/university/${docenteid}`);  
     const data = await response.json();     
@@ -39,11 +46,14 @@ const updateUniversidad = async (universidad) => {
 }
 
 
+
+
 export {
     getListUniversidad,
     createUniversidad,
     updateUniversidad,
-    findByIdUniversidad
+    findByIdUniversidad,
+    getListUsuarios
  
    
    

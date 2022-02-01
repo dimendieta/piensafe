@@ -14,6 +14,12 @@ export default function Navbar() {
                     Tarea
                 </NavLink>
             </li>
+
+            <li>
+                <NavLink to={"/university"} className="navlink">
+                    Usuarios
+                </NavLink>
+            </li>
         
        
         </ul>

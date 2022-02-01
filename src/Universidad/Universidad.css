@@ -64,7 +64,7 @@ tr:hover {background-color: #ddd;}
 .boxFormUpdate {
     background: rgb(172, 20, 20);
     border: 0 none;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
     padding: 20px 30px;
     box-sizing: border-box;
@@ -106,14 +106,24 @@ tr:hover {background-color: #ddd;}
     }
     
 .li { 
-        background: rosybrown;
-        display: inline-block;
-        margin: 10px;
+    border-left: black;
+    display: inline-block;
+    margin: 10px;
     
     }
     
 .navlink { 
-        text-decoration: none;
+    letter-spacing:normal;
+    font-weight:bold;
+    color: rgb(0, 0, 0);
+    font-size:x-large;
+    font-family:cursive;
+    border: none;
+    margin-left: 20px;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 30px;
+  
     }
 
 .subtitulo{
@@ -126,6 +136,8 @@ tr:hover {background-color: #ddd;}
     text-decoration: underline rgb(0, 0, 0);
 }
 .estilocrear{
+    font-weight:bold;
+    font-size:x-large;
     background: #acbd8e;
     font-weight:900;
     font-family: 'Times New Roman', Times, serif;
@@ -135,5 +147,6 @@ tr:hover {background-color: #ddd;}
     cursor: pointer;
     padding: 5px 20px;
     margin: 20px 20px;
+   
    
 }
