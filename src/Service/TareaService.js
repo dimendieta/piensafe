@@ -1,23 +1,23 @@
 const urlCrud = 'http://localhost:3001';
 
 
-const getListUsuarios = async () => {
-    const response = await fetch(`${urlCrud}/usuarios`);    
+const getListTarea = async () => {
+    const response = await fetch(`${urlCrud}/tarea`);    
     const data = await response.json();
     console.log(data)
     return  data;
 }
 
 
-const findByIdUsuarios = async (usuariosid) => {
-    const response = await fetch(`${urlCrud}/usuarios/${usuariosid}`);  
+const findByIdTarea = async (tareaid) => {
+    const response = await fetch(`${urlCrud}/tarea/${tareaid}`);  
     const data = await response.json();     
     return  data;
 }
 
-const createUsuarios = async (universidad) => {
+const createTarea = async (universidad) => {
     console.log(universidad);
-    const resp = await fetch(`${urlCrud}/usuarios`, {
+    const resp = await fetch(`${urlCrud}/tarea`, {
         method: 'POST',
         body: JSON.stringify(universidad),
         headers: {
@@ -27,9 +27,9 @@ const createUsuarios = async (universidad) => {
     return await resp.json();
 }
 
-const updateUsuarios = async (universidad) => {
+const updateTarea = async (universidad) => {
   
-    const resp = await fetch(`${urlCrud}/usuarios`, {
+    const resp = await fetch(`${urlCrud}/tarea`, {
         method: 'PUT',
         body: JSON.stringify(universidad),
         headers: {
@@ -41,8 +41,8 @@ const updateUsuarios = async (universidad) => {
 
 
 export {
-    getListUsuarios,
-    findByIdUsuarios,
-    createUsuarios,
-    updateUsuarios
+    getListTarea,
+    findByIdTarea,
+    createTarea,
+    updateTarea
 }

@@ -10,13 +10,13 @@ export default function Navbar() {
 
             </li>
             <li>
-                <NavLink to={"/university"} className="navlink">
+                <NavLink to={"/tarea"} className="navlink">
                     Tarea
                 </NavLink>
             </li>
 
             <li>
-                <NavLink to={"/university"} className="navlink">
+                <NavLink to={"/usuarios"} className="navlink">
                     Usuarios
                 </NavLink>
             </li>

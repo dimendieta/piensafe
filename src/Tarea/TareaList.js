@@ -1,4 +1,4 @@
-function UsuariosList(props){
+function TareaList(props){
 
     return(
     
@@ -24,4 +24,4 @@ function UsuariosList(props){
     
     )}
     
-    export default UsuariosList ;
+    export default TareaList ;

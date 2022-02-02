@@ -16,12 +16,14 @@ function UniversidadUpdate() {
 
   const onChange = (event) => {
 
+    if(event.target.name==='id')
+    setUniversidad({...universidad,id:event.target.value})   
     if(event.target.name==='nombre')
-      setUniversidad({universidad,nombre:event.target.value})    
+      setUniversidad({...universidad,nombre:event.target.value})    
     if(event.target.name==='direccion')    
-      setUniversidad({universidad,direccion:event.target.value})
+      setUniversidad({...universidad,direccion:event.target.value})
     if(event.target.name==='correo')
-      setUniversidad({universidad,correo:event.target.value})
+      setUniversidad({...universidad,correo:event.target.value})
    
    }
 
@@ -40,17 +42,30 @@ function UniversidadUpdate() {
 
              <h2 className="subtitulo">Actualizar Datos</h2>
 
+
              <input 
+             
+             className="formUpdateInput"
+             name="id"
+             placeholder="Id"
+             value={universidad.id}
+             onChange={onChange}
+         />
+
+         <input 
+
+             
              
                 className="formUpdateInput"
                 name="nombre"
                 placeholder="Nombre"
                 value={universidad.nombre}
                 onChange={onChange}
-            />
-
-            <input 
             
+
+            />
+            
+            <input
                 className="formUpdateInput"
                 name="direccion"
                 placeholder="Direccion"

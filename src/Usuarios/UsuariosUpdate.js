@@ -16,12 +16,14 @@ function UsuariosUpdate() {
 
   const onChange = (event) => {
 
+    if(event.target.name==='id')
+    setUsuarios({...usuarios,id:event.target.value}) 
     if(event.target.name==='username')
-      setUsuarios({usuarios,username:event.target.value})    
+      setUsuarios({...usuarios,username:event.target.value})    
     if(event.target.name==='password')    
-      setUsuarios({usuarios,password:event.target.value})
+      setUsuarios({...usuarios,password:event.target.value})
     if(event.target.name==='status')
-      setUsuarios({usuarios,status:event.target.value})
+      setUsuarios({...usuarios,status:event.target.value})
    
    }
 
@@ -39,6 +41,15 @@ function UsuariosUpdate() {
          <form   onSubmit={onSubmit} className="boxFormUpdate">
 
              <h2 className="subtitulo">Actualizar Datos</h2>
+
+             <input 
+             
+                className="formUpdateInput"
+                name="id"
+                placeholder="Id"
+                value={usuarios.id}
+                onChange={onChange}
+            />
 
              <input 
              

@@ -59,7 +59,7 @@ function UsuariosCreate() {
         </label>
 
         <label>
-         Direccion
+         Password
        <input 
          name="password"
          value={password}
@@ -68,7 +68,7 @@ function UsuariosCreate() {
         </label>
 
         <label>
-         Correo
+         Status
         <input 
          name="status"
          value={status}
