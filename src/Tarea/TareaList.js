@@ -6,9 +6,10 @@ function TareaList(props){
         <thead >
           <tr>
             <th >Id</th>
-            <th>username</th>
-            <th>password</th>
-            <th>status</th>
+            <th>Descripcion</th>
+            <th>Dificultad</th>
+            <th>Fecha</th>
+            <th>Docente_id</th>
     
           </tr>
     

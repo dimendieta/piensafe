@@ -14,7 +14,7 @@ function TareaCreate() {
 
    const onSubmit = (event) => {
    event.preventDefault();
-   const objetos = {
+   const objectos = {
    
     descripcion:descripcion,
     dificultad: dificultad,
@@ -22,7 +22,7 @@ function TareaCreate() {
     docente_id:docente_id
 
   }
-  createTarea(objetos)
+  createTarea(objectos)
   }
 
   const onChange = (event) => {
@@ -66,7 +66,7 @@ function TareaCreate() {
         <label>
         Dificultad
        <input 
-         name="dificltad"
+         name="dificultad"
          value={dificultad}
          onChange={onChange}
         />
