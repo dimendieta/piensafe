@@ -3,17 +3,20 @@
 table {
     border-collapse: collapse;
     margin:auto ;
+    color: #000;
 }
 td {
     border-bottom: 1px solid #ddd;    
     padding: 40px;
     padding-top: 5px;
     text-align: left;
+   
   
 }
 tr{
     background-color: #bdd1b7;
     text-align: center;
+   
    
     
 }
@@ -59,6 +62,10 @@ tr:hover {background-color: #ddd;}
     text-transform: uppercase;
     color: #2C3E50;
     margin-bottom: 10px;
+}
+
+.img{
+    border: solid red;
 }
 
 .boxFormUpdate {
@@ -110,21 +117,22 @@ tr:hover {background-color: #ddd;}
     display: inline-block;
     margin: 10px;
     
+    
     }
     
 .navlink { 
     letter-spacing:normal;
-    font-weight:bold;
+   
     color: rgb(0, 0, 0);
-    font-size:x-large;
-    font-family:cursive;
-    border: none;
-    margin-left: 20px;
-    padding: 5px 20px;
-    text-align: center;
-    border-radius: 30px;
+   
+   
+
+
   
-    }
+    
+  }
+  
+    
 
 .subtitulo{
 

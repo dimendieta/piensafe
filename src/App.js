@@ -14,12 +14,6 @@ import UsuariosUpdate from "./Usuarios/UsuariosUpdate";
 import UsuariosCreate from "./Usuarios/UsuariosCreate";
 import UsuariosCourse from "./Course/UsuariosCourse";
 
-import TareaPage from "./Tarea/TareaPage";
-import TareaUpdate from "./Tarea/TareaUpdate";
-import TareaCreate from "./Tarea/TareaCreate";
-import TareaCourse from "./Course/TareaCourse";
-
-import Login from "./Login/Login";
 
 
 
@@ -27,6 +21,8 @@ import Login from "./Login/Login";
 function App() {
   return (
 
+
+  
  
   
    
@@ -34,7 +30,7 @@ function App() {
   <Navbar />
     <Routes>
 
-    <Login/>
+ 
 
       <Route path="/university" element={< UniversidadPage />} /> 
       <Route path="/universidadcourses" element={< UniversidadCourses />} />
@@ -48,19 +44,16 @@ function App() {
       <Route path="/updateUsuarios/:usuariosid" element={< UsuariosUpdate />} />  
       <Route path="/usuarioscourse" element={< UsuariosCourse />} />
       
-      <Route path="/tarea" element={< TareaPage/>} />
-      <Route path="/createTarea" element={< TareaCreate/>} />
-      <Route path="/updateTarea/:tareaid" element={< TareaUpdate />} />  
-      <Route path="/tareacourse" element={< TareaCourse />} />
-      
 
+      
+      
       
      
 
-    
-
     </Routes>
   </BrowserRouter>   
+
+
   );
 }
 

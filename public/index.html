@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head >
+
+
+
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,35 +12,147 @@
       name="description"
       content="Web site created using create-react-app"
     />
+  
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+    ">
+    <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="style.css">
+    
     <title>React App</title>
-  </head>
+   
+   
+
+
   <body>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+
+      <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    
+      <div class="container">
+        <!-- Navigation -->
+        <nav class="nav-main">
+          <!-- Brand -->
+          <img src="img/logocodigos.webp" alt="TechNews Logo" class="nav-brand">
+          <!-- Left Nav -->
+          <ul class="nav-menu">
+            <li>
+              <a href="university">Registro Docentes</a>
+            </li>
+            <li>
+              <a href="usuarios">Registro Usuarios</a>
+            </li>
+            <li>
+              <a href="#">Registro Estudiantes</a>
+
+          </ul>
+    
+          <!-- Right Nav -->
+          <ul class="nav-menu-right">
+            <li>
+              <a href="#">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <hr>
+    
+        <!-- SHOWCASE -->
+        <header class="showcase">
+          <h2>Bienvenidos a mi pagina Web!</h2>
+          <p>La pagina web tendra a detalles lo que son: 
+           <li>Nombres de los Docentes</li> 
+            <li>Nombres de los Usuarios</li>
+            <li>Nombre de los Estudiantes</li>
+          </p>
+          <a href="#" class="btn">
+            Entrar <i class="fas fa-chevron-right"></i>
+          </a>
+        </header>
+    
+        <!-- NEWS CARDS -->
+        <div class="news-cards">
+          <div>
+            <img src="img/sindrome.jpg" alt="" />
+            <h3>¿Qué es el síndrome de Down?</h3>
+            <p>El síndrome de Down es una afección en la que la persona tiene un cromosoma extra. Los cromosomas son pequeños “paquetes” de genes en el organismo. Determinan cómo se forma el cuerpo del bebé durante el embarazo y cómo funciona mientras se desarrolla en el vientre materno y después de nacer.
+            </p>
+            <a href="#">Entrar <i class="fas fa-angle-double-right"></i></a>
+          </div>
+          <div>
+            <img src="img/gamificacion.jpg" alt="" />
+            <h3>¿Qué es gamificación?</h3>
+            <p>La Gamificación es un tipo de aprendizaje que transpone la mecánica de los juegos al ámbito educativo-profesional con el fin de conseguir mejores resultados, la gamificación es usada para absorber, como, por ejemplo algunos conocimientos, mejorar habilidades, o bien recompensar acciones concretas, entre otros muchos objetivos.
+            </p>
+            <a href="#">Entrar <i class="fas fa-angle-double-right"></i></a>
+       
+          </div>
+          <div>
+            <img src="img/actividades.jpg" alt="" />
+            <h3>Actividades Utilizadas</h3>
+            <p>
+              <li>Oraciones ideograficas </li>
+              <li> Canciones infantiles</li>
+                <li> Onomatopeyas</li>
+                  <li> Campos semánticos</li>
+            </p>
+            <a href="#">Entrar <i class="fas fa-angle-double-right"></i></a>
+          </div>
+          <div>
+            <img src="img/javascript.png" alt="" />
+            <h3>Lenguajes de Programacion</h3>
+            <p>
+              <li>JavaScript</li>
+              <li>Css</li>
+              <li>Mysql</li>
+            
+            </p>
+            <a href="#">Entrar <i class="fas fa-angle-double-right"></i></a>
+          </div>
+        </div>
+    
+
+       
+    
+        <!-- Follow -->
+        <section class="social">
+          <p>Contactanos</p>
+          <div class="links">
+            <a href="https://facebook.com">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </section>
+      </div>
+    
+  
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="main.js"></script>
+    
+      
+
+    </div>
+    
+
+
   </body>
 </html>

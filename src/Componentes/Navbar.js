@@ -9,11 +9,6 @@ export default function Navbar() {
                 </NavLink>
 
             </li>
-            <li>
-                <NavLink to={"/tarea"} className="navlink">
-                    Tarea
-                </NavLink>
-            </li>
 
             <li>
                 <NavLink to={"/usuarios"} className="navlink">
